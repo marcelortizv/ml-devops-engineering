@@ -1,2 +1,4 @@
-root - INFO - Summing first_val + second_val: SUCCESS
-root - ERROR - first_val and second_val should be integers.
+root - INFO - 4, 5
+root - INFO - SUCCESS: it looks like the values are ints
+root - INFO - no, way
+root - ERROR - ERROR: it appears the values are not ints
