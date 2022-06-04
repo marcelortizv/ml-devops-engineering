@@ -26,6 +26,22 @@ churn_script_logging_and_tests.py
 README.md
 
 ## Files and data description
+`churn_library.py`: run the pipeline for training models and generate artifacts 
 
+`churn_script_logging_and_tests.py` rin the tests for de training pipeline
 
+`README.md`: instructions
+
+* data: Contains data for the analysis
+* Images: Folder containing images generated in EDA and modeling
+* Logs: Results of tests
+* Models: Folder containing ML models generated.
 ## Running Files
+
+First, you should run in terminal console
+
+`python churn_library.py`
+
+After the models were trained and artifacts generate, you can run the tests
+
+`python churn_script_logging_and_test.py`
