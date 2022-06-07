@@ -32,13 +32,37 @@ README.md
 
 `README.md`: instructions
 
-* data: Contains data for the analysis
-* Images: Folder containing images generated in EDA and modeling
-* Logs: Results of tests
-* Models: Folder containing ML models generated.
+* data
+    * bank_data.csv
+* images
+    * eda
+        * churn_distribution.png
+        * customer_age_distribution.png
+        * heatmap.png
+        * marital_status_distribution.png
+        * total_transaction_distribution.png
+    * results
+        * feature_importance.png
+        * logistics_results.png
+        * rf_results.png
+        * roc_curve_result.png
+* logs
+    * churn_library.log
+* models
+    * logistic_model.pkl
+    * rfc_model.pkl
+* churn_library.py
+* churn_notebook.ipynb
+* churn_script_logging_and_tests.py
+* README.md
+
 ## Running Files
 
-First, you should run in terminal console
+First, you need to install the requirements:
+
+`pip install -r requirements_py3.8.txt`
+
+Second, you should run in terminal console
 
 `python churn_library.py`
 

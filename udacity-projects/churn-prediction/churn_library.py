@@ -6,14 +6,14 @@ Date: May 31 2022
 """
 
 # import libraries
-
+import os
 from sklearn.model_selection import train_test_split
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 
-from sklearn.metrics import classification_report
+from sklearn.metrics import roc_curve, classification_report
 
 import shap
 import joblib
@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 sns.set()
-import os
+
 
 os.environ['QT_QPA_PLATFORM'] = 'offscreen'
 
@@ -162,6 +162,15 @@ def classification_report_image(y_train,
         plt.text(0.01, 0.7, str(classification_report(classification_data[4], classification_data[5])))
         plt.axis("off")
         plt.savefig("images/results/%s.jpg" % key)
+        plt.close()
+
+        # Plot the ROC curve
+        fpr, tpr, _ = roc_curve(classification_data[4], classification_data[5])
+        plt.figure(figsize=(20, 10))
+        plt.plot(fpr, tpr)
+        plt.ylabel('True Positive Rate')
+        plt.xlabel('False Positive Rate')
+        plt.savefig("images/results/roc_curve_%s.jpg" % key)
         plt.close()
 
 
