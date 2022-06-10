@@ -1,0 +1,16 @@
+06/09/2022 09:20:03 PM Started
+06/09/2022 09:20:03 PM Raw dataframe fixture creation: SUCCESS
+06/09/2022 09:20:04 PM NumExpr defaulting to 8 threads.
+06/09/2022 09:20:04 PM Testing perform_eda: SUCCESS
+06/09/2022 09:20:04 PM Opening Churn image: SUCCESS
+06/09/2022 09:20:04 PM Opening correlation image: SUCCESS
+06/09/2022 09:20:04 PM Opening Customer_Age image: SUCCESS
+06/09/2022 09:20:04 PM Opening Marital_Status image: SUCCESS
+06/09/2022 09:20:04 PM Opening Total_Trans_Ct image: SUCCESS
+06/09/2022 09:20:05 PM Testing encoder_helper: SUCCESS
+06/09/2022 09:20:05 PM Testing feature_engineering process and length of files: SUCCESS
+06/09/2022 11:26:22 PM Testing testing_models. Models were created: SUCCESS
+06/09/2022 11:26:22 PM Testing testing_models (report generation): SUCCESS
+06/09/2022 11:26:22 PM Testing testing_models (report generation): SUCCESS
+06/09/2022 11:26:22 PM Testing testing_models (report generation): SUCCESS
+06/09/2022 11:26:22 PM Finished

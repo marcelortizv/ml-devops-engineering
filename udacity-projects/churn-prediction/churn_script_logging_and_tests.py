@@ -15,16 +15,15 @@ import joblib
 from pathlib import Path
 import churn_library as cls
 
-@pytest.fixture
-def logger():
-    logging.basicConfig(
-        filename='./logs/churn_library.log',
-        level=logging.INFO,
-        filemode='w',
-        format='%(name)s - %(levelname)s - %(message)s')
+#@pytest.fixture
+#def logger():
+#    logging.basicConfig(
+#        filename='./logs/churn_library.log',
+#        level=logging.INFO,
+#        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
-def test_import(logger):
+def test_import():
     """
     test data import - this example is completed for you to assist with the other test functions
     """
@@ -43,7 +42,7 @@ def test_import(logger):
         raise err
 
 
-def test_eda(logger):
+def test_eda():
     """
     test perform eda function
     """
@@ -63,7 +62,7 @@ def test_eda(logger):
         raise err
 
 
-def test_encoder_helper(logger):
+def test_encoder_helper():
     """
     test encoder helper
     """
@@ -95,7 +94,7 @@ def test_encoder_helper(logger):
     logging.info("Testing encoder_helper: SUCCESS")
 
 
-def test_perform_feature_engineering(logger):
+def test_perform_feature_engineering():
     """
     test perform_feature_engineering
     """
@@ -116,7 +115,7 @@ def test_perform_feature_engineering(logger):
         raise err
 
 
-def test_train_models(logger):
+def test_train_models():
     """
     test train_models
     """
@@ -154,8 +153,14 @@ if __name__ == "__main__":
     #     for file in files:
     #         os.remove(file)
     # sys.exit(pytest.main(["-s"]))
-    test_import(logger)
-    test_eda(logger)
-    test_encoder_helper(logger)
-    test_perform_feature_engineering(logger)
-    test_train_models(logger)
+    logging.basicConfig(
+            filename='./logs/churn_library.log',
+            level=logging.INFO,
+            format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+    logging.info('Started')
+    test_import()
+    test_eda()
+    test_encoder_helper()
+    test_perform_feature_engineering()
+    test_train_models()
+    logging.info('Finished')
