@@ -4,23 +4,11 @@ Author: Marcelo
 Date: May 31 2022
 """
 
-import os
+
 import logging
-import sys
-import glob
-
-import pytest
 import joblib
-
 from pathlib import Path
 import churn_library as cls
-
-#@pytest.fixture
-#def logger():
-#    logging.basicConfig(
-#        filename='./logs/churn_library.log',
-#        level=logging.INFO,
-#        format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
 def test_import():
@@ -148,11 +136,7 @@ def test_train_models():
 
 
 if __name__ == "__main__":
-    # for directory in ["logs", "images/eda", "images/results", "./models"]:
-    #     files = glob.glob("%s/*" % directory)
-    #     for file in files:
-    #         os.remove(file)
-    # sys.exit(pytest.main(["-s"]))
+
     logging.basicConfig(
             filename='./logs/churn_library.log',
             level=logging.INFO,
