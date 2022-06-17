@@ -1,0 +1,23 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-06-13T23:38:26.820099",
+    "startedAt": "2022-06-13T23:38:24.627066",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "reproducible-model-workflow/upload-and-version-artifacts.ipynb",
+    "root": "C:/Users/marce/OneDrive - Escuela Superior Polit\u00e9cnica del Litoral/GitHub Repositories/ml-devops-engineering",
+    "git": {
+        "remote": "https://github.com/marcelortizv/ml-devops-engineering.git",
+        "commit": "edef622cbccd1e0fb97faf0ad38f68a5965cfd77"
+    },
+    "email": "marcelortiz1296@hotmail.com",
+    "host": "LAPTOP-RF53NRPQ",
+    "username": "marce",
+    "executable": "C:\\Users\\marce\\Anaconda3\\envs\\ml-devops-engineering\\python.exe"
+}

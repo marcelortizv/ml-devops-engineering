@@ -1,9 +1,9 @@
-'''
+"""
 Testing & Logging exercise solution
 
 author: Josh
 date: March 27, 2021
-'''
+"""
 
 import logging
 logging.basicConfig(

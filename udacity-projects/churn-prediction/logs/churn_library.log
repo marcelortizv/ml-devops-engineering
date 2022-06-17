@@ -14,3 +14,20 @@
 06/09/2022 11:26:22 PM Testing testing_models (report generation): SUCCESS
 06/09/2022 11:26:22 PM Testing testing_models (report generation): SUCCESS
 06/09/2022 11:26:22 PM Finished
+06/11/2022 12:12:13 AM Started
+06/11/2022 12:12:13 AM Raw dataframe fixture creation: SUCCESS
+06/11/2022 12:12:14 AM Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+06/11/2022 12:12:14 AM NumExpr defaulting to 8 threads.
+06/11/2022 12:12:15 AM Testing perform_eda: SUCCESS
+06/11/2022 12:12:15 AM Opening Churn image: SUCCESS
+06/11/2022 12:12:15 AM Opening correlation image: SUCCESS
+06/11/2022 12:12:15 AM Opening Customer_Age image: SUCCESS
+06/11/2022 12:12:15 AM Opening Marital_Status image: SUCCESS
+06/11/2022 12:12:15 AM Opening Total_Trans_Ct image: SUCCESS
+06/11/2022 12:12:15 AM Testing encoder_helper: SUCCESS
+06/11/2022 12:12:15 AM Testing feature_engineering process and length of files: SUCCESS
+06/11/2022 12:15:35 AM Testing testing_models. Models were created: SUCCESS
+06/11/2022 12:15:35 AM Testing testing_models (report generation): SUCCESS
+06/11/2022 12:15:35 AM Testing testing_models (report generation): SUCCESS
+06/11/2022 12:15:35 AM Testing testing_models (report generation): SUCCESS
+06/11/2022 12:15:35 AM Finished
