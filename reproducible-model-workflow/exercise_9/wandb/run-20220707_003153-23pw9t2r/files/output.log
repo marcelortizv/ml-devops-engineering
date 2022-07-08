@@ -1,0 +1,65 @@
+========================================================================================================= test session starts =========================================================================================================
+platform win32 -- Python 3.8.13, pytest-7.1.2, pluggy-1.0.0 -- C:\Users\marce\Anaconda3\envs\ml-devops-engineering\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\exercise_9
+collected 1 item
+test_data.py::test_kolmogorov_smirnov FAILED
+============================================================================================================== FAILURES ===============================================================================================================
+_______________________________________________________________________________________________________ test_kolmogorov_smirnov _______________________________________________________________________________________________________
+data = (       Unnamed: 0  Unnamed: 0.1  danceability  energy  ...       genre                                          song_... NaN                            Lost Lands 2019                            Lost Lands 2019
+[12593 rows x 20 columns])
+ks_alpha = 0.9
+    def test_kolmogorov_smirnov(data, ks_alpha):
+        sample1, sample2 = data
+        columns = [
+            "danceability",
+            "energy",
+            "loudness",
+            "speechiness",
+            "acousticness",
+            "instrumentalness",
+            "liveness",
+            "valence",
+            "tempo",
+            "duration_ms"
+        ]
+        # Bonferroni correction for multiple hypothesis testing
+        # (see my blog post on this topic to see where this comes from:
+        # https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)
+        alpha_prime = 1 - (1 - ks_alpha)**(1 / len(columns))
+        for col in columns:
+            ts, p_value = scipy.stats.ks_2samp(sample1[col], sample2[col])
+            # NOTE: as always, the p-value should be interpreted as the probability of
+            # obtaining a test statistic (TS) equal or more extreme that the one we got
+            # by chance, when the null hypothesis is true. If this probability is not
+            # large enough, this dataset should be looked at carefully, hence we fail
+>           assert p_value > alpha_prime
+E           assert 0.1910608811990394 > 0.2056717652757185
+test_data.py:34: AssertionError
+========================================================================================================== warnings summary ===========================================================================================================
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:10
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:10: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _nlv = LooseVersion(_np_version)
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:11
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:11: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    np_version_under1p17 = _nlv < LooseVersion("1.17")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:12
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:12: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    np_version_under1p18 = _nlv < LooseVersion("1.18")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:13
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:13: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _np_version_under1p19 = _nlv < LooseVersion("1.19")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:14
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:14: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _np_version_under1p20 = _nlv < LooseVersion("1.20")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\setuptools\_distutils\version.py:351
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\setuptools\_distutils\version.py:351: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    other = LooseVersion(other)
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(__version__) >= LooseVersion("1.17.0"):
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================================================================================================= short test summary info =======================================================================================================
+FAILED test_data.py::test_kolmogorov_smirnov - assert 0.1910608811990394 > 0.2056717652757185
+==================================================================================================== 1 failed, 8 warnings in 4.63s ====================================================================================================

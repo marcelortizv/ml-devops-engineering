@@ -1,0 +1,2 @@
+Artifact uploaded, use this artifact in a run by adding:
+    artifact = run.use_artifact("marcelortizv/exercise_4/genred_mod.parquet:latest")

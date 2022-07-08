@@ -1,0 +1,32 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-07-07T05:31:18.517022",
+    "startedAt": "2022-07-07T05:31:16.243870",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        "--reference_artifact",
+        "exercise_6/data_train.csv:latest",
+        "--sample_artifact",
+        "exercise_6/data_test.csv:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "git": {
+        "remote": "https://github.com/marcelortizv/ml-devops-engineering.git",
+        "commit": "fd94e586b82ad6cb5608239b231fa90a935f15d7"
+    },
+    "email": "marcelortiz1296@hotmail.com",
+    "root": "C:/Users/marce/OneDrive - Escuela Superior Polit\u00e9cnica del Litoral/GitHub Repositories/ml-devops-engineering",
+    "host": "LAPTOP-RF53NRPQ",
+    "username": "marce",
+    "executable": "C:\\Users\\marce\\Anaconda3\\envs\\ml-devops-engineering\\python.exe"
+}

@@ -1,0 +1,23 @@
+2022-06-22 00:41:41,648 DEBUG   MainThread:4328 [wandb_config.py:_load_defaults():154] no defaults not found in config-defaults.yaml
+2022-06-22 00:41:42,012 DEBUG   MainThread:4328 [meta.py:_setup_code_git():49] probe for git information
+2022-06-22 00:41:42,093 DEBUG   MainThread:4328 [run_manager.py:__init__():547] Initialized sync for exercise_1/6rb98jz6
+2022-06-22 00:41:42,097 INFO    MainThread:4328 [run_manager.py:wrap_existing_process():1149] wrapping existing process 30768
+2022-06-22 00:41:42,414 INFO    MainThread:4328 [run_manager.py:init_run():928] system metrics and metadata threads started
+2022-06-22 00:41:42,424 INFO    MainThread:4328 [run_manager.py:init_run():967] upserting run before process can begin, waiting at most 10 seconds
+2022-06-22 00:41:42,809 INFO    Thread-21 :4328 [run_manager.py:_upsert_run():1056] saving pip packages
+2022-06-22 00:41:42,810 INFO    Thread-21 :4328 [run_manager.py:_upsert_run():1058] initializing streaming files api
+2022-06-22 00:41:42,811 INFO    Thread-21 :4328 [run_manager.py:_upsert_run():1065] unblocking file change observer, beginning sync with W&B servers
+2022-06-22 00:41:42,811 INFO    MainThread:4328 [run_manager.py:wrap_existing_process():1166] informing user process we are ready to proceed
+2022-06-22 00:41:42,814 INFO    MainThread:4328 [run_manager.py:_sync_etc():1298] entering loop for messages from user process
+2022-06-22 00:41:42,867 INFO    MainThread:4328 [run_manager.py:_sync_etc():1321] received message from user process: {"exitcode": 1}
+2022-06-22 00:41:42,867 INFO    MainThread:4328 [run_manager.py:_sync_etc():1408] closing log streams and sending exitcode to W&B
+2022-06-22 00:41:42,867 INFO    MainThread:4328 [run_manager.py:shutdown():1072] shutting down system stats and metadata service
+2022-06-22 00:41:43,009 INFO    Thread-8  :4328 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\wandb-events.jsonl
+2022-06-22 00:41:43,013 INFO    Thread-8  :4328 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\output.log
+2022-06-22 00:41:43,014 INFO    Thread-8  :4328 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\requirements.txt
+2022-06-22 00:41:43,014 INFO    Thread-8  :4328 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\wandb-metadata.json
+2022-06-22 00:41:43,417 INFO    MainThread:4328 [run_manager.py:shutdown():1086] stopping streaming files and file change observer
+2022-06-22 00:41:44,021 INFO    Thread-8  :4328 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\wandb-metadata.json
+2022-06-22 00:41:45,521 INFO    MainThread:4328 [run_manager.py:_sync_etc():1420] process only ran for 4 seconds, not syncing files
+):692] file/dir modified: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\wandb\run-20220622_004140-6rb98jz6\wandb-metadata.json
+2022-06-22 00:41:45,521 INFO    MainThread:4328 [6rb98jz6:run_manager.py:_sync_etc():1420] process only ran for 4 seconds, not syncing files

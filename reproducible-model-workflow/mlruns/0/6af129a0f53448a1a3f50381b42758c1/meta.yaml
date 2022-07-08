@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/6af129a0f53448a1a3f50381b42758c1/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 6af129a0f53448a1a3f50381b42758c1
+run_uuid: 6af129a0f53448a1a3f50381b42758c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656373407145
+status: 1
+tags: []
+user_id: marce

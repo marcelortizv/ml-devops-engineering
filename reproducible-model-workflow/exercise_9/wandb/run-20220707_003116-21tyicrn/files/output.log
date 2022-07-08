@@ -1,0 +1,31 @@
+========================================================================================================= test session starts =========================================================================================================
+platform win32 -- Python 3.8.13, pytest-7.1.2, pluggy-1.0.0 -- C:\Users\marce\Anaconda3\envs\ml-devops-engineering\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\marce\OneDrive - Escuela Superior Politécnica del Litoral\GitHub Repositories\ml-devops-engineering\reproducible-model-workflow\exercise_9
+collected 1 item
+test_data.py::test_kolmogorov_smirnov PASSED
+========================================================================================================== warnings summary ===========================================================================================================
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:10
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:10: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _nlv = LooseVersion(_np_version)
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:11
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:11: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    np_version_under1p17 = _nlv < LooseVersion("1.17")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:12
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:12: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    np_version_under1p18 = _nlv < LooseVersion("1.18")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:13
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:13: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _np_version_under1p19 = _nlv < LooseVersion("1.19")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:14
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\__init__.py:14: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _np_version_under1p20 = _nlv < LooseVersion("1.20")
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\setuptools\_distutils\version.py:351
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\setuptools\_distutils\version.py:351: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    other = LooseVersion(other)
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120
+..\..\..\..\..\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120
+  C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\pandas\compat\numpy\function.py:120: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(__version__) >= LooseVersion("1.17.0"):
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================================================================================== 1 passed, 8 warnings in 4.17s ====================================================================================================

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/marce/OneDrive%20-%20Escuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral/GitHub%20Repositories/ml-devops-engineering/reproducible-model-workflow/exercise_5/mlruns/0/b40e7b230c4e46bc8972e4fbb4adadec/artifacts
+end_time: 1656778945478
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b40e7b230c4e46bc8972e4fbb4adadec
+run_uuid: b40e7b230c4e46bc8972e4fbb4adadec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656778943587
+status: 4
+tags: []
+user_id: marce

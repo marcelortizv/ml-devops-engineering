@@ -1,0 +1,11 @@
+2022-07-02 11:32:03,201 Downloading artifact
+Traceback (most recent call last):
+  File "C:/Users/marce/OneDrive - Escuela Superior Politécnica del Litoral/GitHub Repositories/ml-devops-engineering/reproducible-model-workflow/exercise_5/run.py", line 82, in <module>
+    go(args)
+  File "C:/Users/marce/OneDrive - Escuela Superior Politécnica del Litoral/GitHub Repositories/ml-devops-engineering/reproducible-model-workflow/exercise_5/run.py", line 19, in go
+    artifact = run.use_artifact(args.input_artifact)
+  File "C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\wandb\sdk\wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\marce\Anaconda3\envs\ml-devops-engineering\lib\site-packages\wandb\sdk\wandb_run.py", line 2369, in use_artifact
+    raise ValueError(
+ValueError: You must pass an artifact name (e.g. "pedestrian-dataset:v1"), an instance of `wandb.Artifact`, or `wandb.Api().artifact()` to `use_artifact`
